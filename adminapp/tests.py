@@ -10,6 +10,7 @@ class JobTests(TestCase):
     def test_job_is_created_successfully(self):
         job = Job(
             name='test_job',
+            total_applied=0,
         )
         job.save()
 
